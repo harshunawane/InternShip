@@ -7,7 +7,7 @@ import java.time.LocalDate;
 @Data
 public class ProjectDTO {
 
-    private Integer ProjectId;
+    private Integer projectId;
 
     private String projectName;
     private Integer ideaOwner;
