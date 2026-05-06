@@ -13,14 +13,17 @@ public class Project {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer ProjectId;
-
+    @Column(name="project_id")
+    private Integer projectId;
+@Column(name="project_name")
     private String projectName;
+@Column(name="idea_owner")
     private Integer ideaOwner;
+@Column(name="release_date")
     private LocalDate releaseDate;
 
     @ManyToOne
-    @JoinColumn(name ="mentorId")
+    @JoinColumn(name ="mentor_id")
     private Mentor mentor;
 
 }
